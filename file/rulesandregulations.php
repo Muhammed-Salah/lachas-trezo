@@ -34,7 +34,7 @@
 
 
 <div id="banner_image">
-    <div class="col-lg-3"><a href="/rulesandregulations.php"><h1 style="color:antiquewhite">Lachas Trezò</h1></a></div>
+    <div class="col-lg-3"><a href=""><h1 style="color:antiquewhite">Lachas Trezò</h1></a></div>
 
             <div class="container">
                 <center>
