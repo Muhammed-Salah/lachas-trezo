@@ -1,6 +1,6 @@
 #banner_image {
-    padding-top: px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
     color: #f8f8f8;
     background: url(../../img/map.png) no-repeat center center;
@@ -18,20 +18,19 @@
 }
 
 #banner_image2 {
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../../img/bg.png) no-repeat center center;
+    background: url(../../img/loginandreg.png) no-repeat center center;
     background-size: cover;
 }
 
 #banner_content2 {
     position: relative;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    margin-top: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 6%;
+    background-color: rgba(0, 0, 0, 0);
     margin-bottom: 12%;
-    background-color: rgba(0, 0, 0, 0.6);
     max-width: 850px;
 }
