@@ -100,6 +100,7 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
+  opacity: 0.9;
   z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -121,7 +122,53 @@ video {
   opacity: 0.5;
   z-index: 1;
 }
+.footer {
+        position: fixed;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+      }
 
+
+      .button {
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
 </style>
     <title>Lachas Trezò  2019
      </title>
@@ -138,7 +185,7 @@ video {
 <html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creating 3D worlds with HTML and CSS</title>
-<style>body{font:125%/1.75 Martel-subset,Georgia;color:#444;margin:0}p{margin:3.5em 0}h1{font-size:250%;font-weight:bold;line-height:1.4}h2{color:#b30027;font-size:175%;line-height:1.5;margin:.51em 0}main{display:block}p:first-child,h2:first-child,h2+*{margin-top:0}code{font-family:Menlo,"Courier New",monospace;font-size:85%;line-height:1.5}img{max-width:100%;height:auto}iframe{display:inherit;border:none;width:100%}.grid{text-align:center;margin:auto;padding:20px;font-size:0}.grid__item{font-size:1.25rem;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:20px;display:inline-block;vertical-align:top;text-align:left;width:100%}.grid--4{max-width:880px}.grid--6{max-width:1320px}.grid--center{text-align:center}.caption{line-height:1.95;color:#999999;margin:0}.caption{font-size:75%;text-transform:uppercase;letter-spacing:.05em;word-spacing:.1em}.figure{display:block;margin:2.5em -40px}.figure__caption{display:block;margin:1.25em 2em 0 2em;text-align:center}.figure__item{display:block;overflow:hidden}.figure__item--inset{padding:40px}.figure__item>*{display:block;margin-left:auto;margin-right:auto}.image{background:#fff;border-radius:5px;box-shadow:0 2px 1px 1px rgba(0,0,0,.2);overflow:hidden}.image img{display:block}.nav a{color:inherit;display:inline-block}.nav a:not(:hover){text-decoration:none}.button{border-radius:5px;background:#b30027;color:#fff;text-decoration:none;padding:.85em 1em;display:inline-block;box-shadow:inset 0 -3px rgba(0,0,0,.25),0 2px 1px 1px rgba(0,0,0,.2)}.button:hover{background:#87141b}.page__nav{padding:0;background:#980013;color:#fff;margin:-1.1rem 0}.page__nav a{font-size:110%;margin:.25em 2.5%}.page__header{padding:6% 0;background:#1d2627}.page__title{color:#fff;-webkit-animation:2s 1s fade backwards ease-out;animation:2s 1s fade backwards ease-out}.page__subtitle{display:block;font-size:115%;color:#c6cbcc;text-transform:uppercase;letter-spacing:.35em;word-spacing:.5em;margin:.5em 0;-webkit-animation:.5s .5s fade backwards ease-out;animation:.5s .5s fade backwards ease-out}.page__content{padding:5% 0;background:#e4e4e4}.page__content--alt{background:#737978;color:#c6c6c6}.page__content a:not(.button){color:blue;text-decoration-skip:ink}.page__content--alt h2{color:#fff}.page__content--alt a:not(.button){color:#fff}.post p:first-child{font-size:130%;line-height:1.81}.post__navigation .nav__item{width:45%}.post__navigation a{width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.post__navigation .nav__item--prev{float:left}.post__navigation .nav__item--next{float:right;text-align:right}.comments{margin-left:0;padding-left:0}.comment{font-size:84%;line-height:1.55;margin:3.5em 0;list-style:none;overflow:hidden;position:relative;padding:0 0 0 5.5em}.comment__header{margin-bottom:1.35em}.comment__author{font-size:130%;font-style:normal;display:inline-block;color:#fff}.comment__date{display:block;color:#999}.comment p{margin-top:1.25em;margin-bottom:1.25em}.comment p:first-child{margin-top:0}.avatar{width:3.5em;height:3.5em;background:#fff;margin:.25em;border-radius:50%;box-shadow:0 0 0 .2em #737978,0 0 0 .25em #969696}.comment__avatar{position:absolute;margin-left:-5.5em;z-index:1}.comment--reply{font-size:100%;padding:0;overflow:visible}.comment--reply:before{content:"";position:absolute;left:-3.5em;top:-1000em;bottom:100%;border-right:1px solid #969696}.comment--reply:last-child{margin-bottom:0;padding-bottom:0}:not(pre)>code{box-shadow:0 0 1px rgba(20,20,20,.6);background-color:rgba(0,0,0,.07);border-radius:3px;padding:.15em .4em;margin-left:.15em;margin-right:.15em;white-space:nowrap}.pre-wrap{white-space:pre-wrap;word-break:break-all}.codeblock{font-size:90%;padding:40px;background:#39382e;color:blue;overflow:auto;text-shadow:0 1px 0 #000}.code__string{color:#a6e22e}.code__property{color:#66d9ef}.code__value{color:#b88bff}.code__punc{color:#a59f85}.code__color{box-shadow:0 0 0 1px rgba(0,0,0,.5);vertical-align:text-bottom;border-radius:2px;margin:.15em .3em .15em .5em;display:inline-block;padding:.4em}@media screen and (min-width:1080px){.comment{margin-left:-5.5em}.comment--reply{margin-left:0}}@media screen and (max-width:920px){.figure .image{border-radius:0;box-shadow:none}}@media screen and (max-width:640px){.grid{padding:0}.grid__item{font-size:.9rem}.figure{margin-left:-20px;margin-right:-20px}.figure__item--inset{padding:20px}.codeblock{padding:20px}}@media screen and (max-width:310px){.grid__item{font-size:.7rem}}@media screen and (min-width:640px){.comment__author{float:left}.comment__date{float:right}.comment__header{overflow:hidden;margin-bottom:.5em}}@-webkit-keyframes fade{from{transform:translateY(.25em);opacity:0}}@keyframes fade{from{transform:translateY(.25em);opacity:0}}</style>
+<style>body{font:125%/1.75 Martel-subset,Georgia;color:#444;margin:0}p{margin:3.5em 0}h1{font-size:250%;font-weight:bold;line-height:1.4}h2{color:#b30027;font-size:175%;line-height:1.5;margin:.51em 0}main{display:block}p:first-child,h2:first-child,h2+*{margin-top:0}code{font-family:Menlo,"Courier New",monospace;font-size:85%;line-height:1.5}img{max-width:100%;height:auto}iframe{display:inherit;border:none;width:100%}.grid{text-align:center;margin:auto;padding:20px;font-size:0}.grid__item{font-size:1.25rem;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:20px;display:inline-block;vertical-align:top;text-align:left;width:100%}.grid--4{max-width:880px}.grid--6{max-width:1320px}.grid--center{text-align:center}.caption{line-height:1.95;color:#999999;margin:0}.caption{font-size:75%;text-transform:uppercase;letter-spacing:.05em;word-spacing:.1em}.figure{display:block;margin:2.5em -40px}.figure__caption{display:block;margin:1.25em 2em 0 2em;text-align:center}.figure__item{display:block;overflow:hidden}.figure__item--inset{padding:40px}.figure__item>*{display:block;margin-left:auto;margin-right:auto}.image{background:#fff;border-radius:5px;box-shadow:0 2px 1px 1px rgba(0,0,0,.2);overflow:hidden}.image img{display:block}.nav a{color:inherit;display:inline-block}.nav a:not(:hover){text-decoration:none}.button{border-radius:5px;background:#ffffff;color:rgb(0, 0, 0);text-decoration:none;padding:.85em 1em;display:inline-block;box-shadow:inset 0 -3px rgba(0,0,0,.25),0 2px 1px 1px rgba(0,0,0,.2)}.button:hover{background:#e6e6e6}.page__nav{padding:0;background:#980013;color:#fff;margin:-1.1rem 0}.page__nav a{font-size:110%;margin:.25em 2.5%}.page__header{padding:6% 0;background:#1d2627}.page__title{color:#fff;-webkit-animation:2s 1s fade backwards ease-out;animation:2s 1s fade backwards ease-out}.page__subtitle{display:block;font-size:115%;color:#c6cbcc;text-transform:uppercase;letter-spacing:.35em;word-spacing:.5em;margin:.5em 0;-webkit-animation:.5s .5s fade backwards ease-out;animation:.5s .5s fade backwards ease-out}.page__content{padding:5% 0;background:#e4e4e4}.page__content--alt{background:#737978;color:#c6c6c6}.page__content a:not(.button){color:blue;text-decoration-skip:ink}.page__content--alt h2{color:#fff}.page__content--alt a:not(.button){color:#fff}.post p:first-child{font-size:130%;line-height:1.81}.post__navigation .nav__item{width:45%}.post__navigation a{width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.post__navigation .nav__item--prev{float:left}.post__navigation .nav__item--next{float:right;text-align:right}.comments{margin-left:0;padding-left:0}.comment{font-size:84%;line-height:1.55;margin:3.5em 0;list-style:none;overflow:hidden;position:relative;padding:0 0 0 5.5em}.comment__header{margin-bottom:1.35em}.comment__author{font-size:130%;font-style:normal;display:inline-block;color:#fff}.comment__date{display:block;color:#999}.comment p{margin-top:1.25em;margin-bottom:1.25em}.comment p:first-child{margin-top:0}.avatar{width:3.5em;height:3.5em;background:#fff;margin:.25em;border-radius:50%;box-shadow:0 0 0 .2em #737978,0 0 0 .25em #969696}.comment__avatar{position:absolute;margin-left:-5.5em;z-index:1}.comment--reply{font-size:100%;padding:0;overflow:visible}.comment--reply:before{content:"";position:absolute;left:-3.5em;top:-1000em;bottom:100%;border-right:1px solid #969696}.comment--reply:last-child{margin-bottom:0;padding-bottom:0}:not(pre)>code{box-shadow:0 0 1px rgba(20,20,20,.6);background-color:rgba(0,0,0,.07);border-radius:3px;padding:.15em .4em;margin-left:.15em;margin-right:.15em;white-space:nowrap}.pre-wrap{white-space:pre-wrap;word-break:break-all}.codeblock{font-size:90%;padding:40px;background:#39382e;color:blue;overflow:auto;text-shadow:0 1px 0 #000}.code__string{color:#a6e22e}.code__property{color:#66d9ef}.code__value{color:#b88bff}.code__punc{color:#a59f85}.code__color{box-shadow:0 0 0 1px rgba(0,0,0,.5);vertical-align:text-bottom;border-radius:2px;margin:.15em .3em .15em .5em;display:inline-block;padding:.4em}@media screen and (min-width:1080px){.comment{margin-left:-5.5em}.comment--reply{margin-left:0}}@media screen and (max-width:920px){.figure .image{border-radius:0;box-shadow:none}}@media screen and (max-width:640px){.grid{padding:0}.grid__item{font-size:.9rem}.figure{margin-left:-20px;margin-right:-20px}.figure__item--inset{padding:20px}.codeblock{padding:20px}}@media screen and (max-width:310px){.grid__item{font-size:.7rem}}@media screen and (min-width:640px){.comment__author{float:left}.comment__date{float:right}.comment__header{overflow:hidden;margin-bottom:.5em}}@-webkit-keyframes fade{from{transform:translateY(.25em);opacity:0}}@keyframes fade{from{transform:translateY(.25em);opacity:0}}</style>
 <link rel="stylesheet" href="./Creating 3D worlds with HTML and CSS_files/font.martel.subset.min.css" title="" onload="onload=null;title=&#39;&#39;;rel=&#39;stylesheet&#39;">
 <meta name="description" content="An experiment in creating a 3D environment using HTML elements and CSS transforms featuring lights, shadows and collision detection.">
 <link rel="canonical" href="https://keithclark.co.uk/articles/creating-3d-worlds-with-html-and-css/">
@@ -166,58 +213,37 @@ video {
 
 
 <!-- </nav> -->
-<!-- <header> -->
-    <div class="overlay">
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+<!-- <div class="overlay"></div> -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="http://localhost/onilne-treasure-hunt-2020/img/livevideo.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
-          <br>
-          <h1 class="page__title">Lachas Trezò</h1>
-          <h5 class="page__title">The quests for hidden treasures!</h5>
-          <time class="page__subtitle" datetime="2018-03-06">30 August 2020</time>
+    </video>
+
+    <div class="container">
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
+                <br><br><br><br><br><br><br><br><br><br>
+                <h1 class="page__title">Lachas Trezò</h1>
+                <h5 class="page__title">The quests for hidden treasures!</h5>
+                <time class="page__subtitle" datetime="2018-03-06">30 August 2020</time>
+                <button class="button"><span>Get Started </span></button>
+              </div>
+            </div>
         </div>
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </div>
+
+    <div class="footer">
+      <div class="col-lg-2 col-sm-4 col-xs-4">
+        <img src="http://localhost/onilne-treasure-hunt-2020/img/IEEE.png">
+      </div>
+
+      <div class="col-lg-2 col-lg-offset-8 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
+        <img src="http://localhost/onilne-treasure-hunt-2020/img/PES.png">
       </div>
     </div>
-  <!-- </header> -->
-
-
-<br>
-
-    <center>
-    <h3><b>Rules & Regulations</b><br></h3><p><h4 >
-      1. You can participate through Mobile phone or PC.<br><br>
-        2. You will have the respective username and password for each one.<br><br>
-        3. There will be 9 exciting questions.<br><br>
-        4. You have only one day to participate & complete all questions.<br><br> 
-        5. Those who completely answered all the questions with minimum time will be announced as the winner.<br><br>
-       
-
-      </h4>
-      
-
-
-
-    <form action='file/index.php'>
-
-    <input  type="submit"  value="&nbsp;&nbsp;Next&nbsp;&nbsp;" class="btn btn-primary" /></from>
-
-
-
-
-
-
-</center>
-<br><br>
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<center>
-
-<img src="img/s.png" height="100%" width="100%">
-</center></body>
+</body>
 </html>
 
 
