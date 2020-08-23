@@ -8,121 +8,121 @@
     </script>
 <head>
     <style>
-/* The container */
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 12px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+      /* The container */
+      .container {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 12px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
 
-/* Hide the browser's default checkbox */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
+      /* Hide the browser's default checkbox */
+      .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+      }
 
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 400px;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
+      /* Create a custom checkbox */
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 400px;
+          height: 25px;
+          width: 25px;
+          background-color: #eee;
+      }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
-}
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+          background-color: #ccc;
+      }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+          background-color: #2196F3;
+      }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
 
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-    display: block;
-}
+      /* Show the checkmark when checked */
+      .container input:checked ~ .checkmark:after {
+          display: block;
+      }
 
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-    left: 10px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+      /* Style the checkmark/indicator */
+      .container .checkmark:after {
+          left: 10px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 
-}
-p.ex1 {
-   
-    padding-left: 10%;
-    padding-right:  10%;
-}
-    img[src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]{
-display:none;
-}
+      }
+      p.ex1 {
+        
+          padding-left: 10%;
+          padding-right:  10%;
+      }
+          img[src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]{
+      display:none;
+      }
 
-header {
-  position: relative;
-  background-color: black;
-  /* height:25vh; */
-  min-height: 20rem;
-  width: 100%;
-  overflow: hidden;
-}
+      header {
+        position: relative;
+        background-color: black;
+        /* height:25vh; */
+        min-height: 20rem;
+        width: 100%;
+        overflow: hidden;
+      }
 
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  opacity: 0.9;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
+      video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        opacity: 0.9;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
 
-.container {
-  position: relative;
-  z-index: 2;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(110, 0, 161);
-  opacity: 0.5;
-  z-index: 1;
-}
-.footer {
+      .container {
+        position: relative;
+        z-index: 2;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(110, 0, 161);
+        opacity: 0.5;
+        z-index: 1;
+      }
+      .footer {
         position: fixed;
         left: 0;
         bottom: -5px;
@@ -169,6 +169,7 @@ video {
         opacity: 1;
         right: 0;
       }
+
 </style>
     <title>Lachas Trezò  2019
      </title>
