@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Document</title>
+    <title>Lachas Trezò | Rules and Regulations</title>
 </head>
 <body>
 <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
