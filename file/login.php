@@ -7,10 +7,11 @@
 	<link rel="icon" href="http://meaieeesb.org/xtrinia/wp-content/uploads/2016/01/cropped-xtrinia-logo-mea-ieee-sb-1-2-180x180.png" type="image/x-icon" width='100%'>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<!-- add header -->
 		<div class="navbar-header">
@@ -34,7 +35,10 @@
 	</div>
 </nav>
 
+<div id="banner_image2">
 <div class="container">
+	<center>
+	<div id="banner_content3">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 well">
 			<form role="form" action="loginuser.php" method="post" name="signupform">
@@ -69,7 +73,7 @@
 		</div>
 	</div>
 	
-</div>
+
 <div class="row">
 <div class="col-md-4 col-md-offset-4 text-center">
 Not yet registered then <a href="index.php">Click Here</a>
@@ -77,6 +81,10 @@ Not yet registered then <a href="index.php">Click Here</a>
 <br><br>
 <div class="col-md-4 col-md-offset-4 text-center">
 Forgot Your Password? <a href="forgot.php">Click Here</a>
+</div>
+</div>
+	</center>
+</div>
 </div>
 </div>
 <script src="js/jquery-1.10.2.js"></script>

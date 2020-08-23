@@ -7,10 +7,11 @@
 	<link rel="icon" href="http://meaieeesb.org/xtrinia/wp-content/uploads/2016/01/cropped-xtrinia-logo-mea-ieee-sb-1-2-180x180.png" type="image/x-icon" width='100%'>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<!-- add header -->
 		<div class="navbar-header">
@@ -32,8 +33,10 @@
 		</div>
 	</div>
 </nav>
-
+<div id="banner_image2">
 <div class="container">
+<center>
+<div id="banner_content4">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 well">
 			<form role="form" action="forgotsent.php" method="post" name="signupform">
@@ -42,18 +45,11 @@
 					<form name="signupform">
 					<div class="form-group">
 						<label for="name">Phone Number</label>
-						<input type="text" name="b1" placeholder="Phone Number" required  class="form-control" />
+						<input type="text" name="b1" placeholder="Phone Number" maxlength="10" required  class="form-control" />
 						<span class="text-danger"></span>
 					</div>
 				
 					
-			
-					
-
-					
-
-				
-
 					<div class="form-group">
 						<input onclick="checking();" type="submit" name="signup" value="Reset" class="btn btn-primary" />
 					</div>
@@ -61,12 +57,15 @@
 				</fieldset>
 			</form>
 		</div>
-	</div>
+	
 				<div class="row">
 <div class="col-md-4 col-md-offset-4 text-center">
 Login? <a href="login.php">Click Here</a>
 </div>
-			
+	</center>
+</div>
+</div>	
+</div>		
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

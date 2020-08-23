@@ -48,8 +48,8 @@
        
 
       </h4>
-                    <a href="login.php" class="btn btn-primary btn-lg active">Login</a>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp
-                    <a href="index.php" class="btn btn-danger btn-lg active">Sign up</a>
+                    <a href="login.php" class="btn btn-success btn-lg active">Login</a>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp
+                    <a href="index.php" class="btn btn-primary btn-lg active">Sign up</a>
                 </div>
                 </center>
             </div>

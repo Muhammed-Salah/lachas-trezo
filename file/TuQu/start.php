@@ -88,10 +88,11 @@ FinishMessage = "Timer Over";
                                                     <input type="hidden" name="userid" value="49211"/>
                                       
             </div>
-
-            <div class="container-fluid main_container">
+    
+        <div class="container-fluid main_container">
             <form action="answersave.php?id=<?php echo $start; ?>" method="post" name="questionfrm">
-            <input type="hidden" id="pndtime" value="0"/>                            <div class="row">
+            <input type="hidden" id="pndtime" value="0"/>                            
+                            <div class="row">
                                 <div class="wizard-container">
                                     <div class="card wizard-card" data-color="blue" id="wizardProfile">
                                         <div class="row">

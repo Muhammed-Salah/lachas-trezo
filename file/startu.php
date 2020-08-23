@@ -35,10 +35,11 @@ $a=randomPassword();
 	<link rel="icon" href="http://meaieeesb.org/xtrinia/wp-content/uploads/2016/01/cropped-xtrinia-logo-mea-ieee-sb-1-2-180x180.png" type="image/x-icon" width='100%'>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<!-- add header -->
 		<div class="navbar-header">
@@ -62,43 +63,40 @@ $a=randomPassword();
 	</div>
 </nav>
 
+<div id="banner_image2">
 <div class="container">
-	<div class="row">
-		<div class="col-md-4 col-md-offset-4 well">
-		
-				<fieldset>
-					<legend>Let's start</legend>
-<form name="signupform" method="post">
-<center><h4>Welcome to Lachas Trezò 
- by  MEA IEEE SB.<br>
-Your account password has been sent to your mobile number</h4></center>
-					<div class="form-group">
-						<label for="name">Your Account Password</label>
-						<input type="text" name="pass" placeholder="Password" value=<?php echo $a; ?> required readonly  class="form-control" />
-						<span class="text-danger"></span>
-					</div>
-				
+	<center>
+	<div id="banner_content5">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 well">
+			
+					<fieldset>
+						<legend>Let's start</legend>
+			<form name="signupform" method="post">
+				<center><h4>Welcome to Lachas Trezò 
+				by  MEA IEEE SB.<br>
+				Your account password has been sent to your mobile number</h4></center>
+						<div class="form-group">
+							<label for="name">Your Account Password</label>
+							<input type="text" name="pass" placeholder="Password" value=<?php echo $a; ?> required readonly  class="form-control" />
+							<span class="text-danger"></span>
+						</div>
 					
-				
-					
-					
-
-
-				
 						
-					<div class="form-group">
-						<a href="startphp.php?phno=<?php echo $_POST['b2'];  ?>"><input onclick="checking();" type="button" name="signup" value="Start Now" class="btn btn-primary" /></a>
-					</div>
-					
-				</fieldset>
-		
-			<span class="text-success"></span>
-			<span class="text-danger"></span>
+						<div class="form-group">
+							<a href="startphp.php?phno=<?php echo $_POST['b2'];  ?>"><input onclick="checking();" type="button" name="signup" value="Start Now" class="btn btn-primary" /></a>
+						</div>
+						
+					</fieldset>
+			
+				<span class="text-success"></span>
+				<span class="text-danger"></span>
+			</div>
 		</div>
 	</div>
-	
+	</center>
+	</div>
 </div>
-
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
@@ -130,7 +128,7 @@ include_once('database.php');
 	 				echo "<script>alert('cannot now please try again later..!!!')</script>";
 	 				echo "<script> history.go(-1) </script>"; 
  }
- else if($chde['phno']== $phno)
+ else if(isset($chde['phno']))
  {
  	
  	echo "<script>alert('Already Registered ..!')</script>";
