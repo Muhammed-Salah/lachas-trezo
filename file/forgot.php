@@ -36,7 +36,7 @@
 <div id="banner_image2">
 <div class="container">
 <center>
-<div id="banner_content4">
+<div id="banner_content2">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 well">
 			<form role="form" action="forgotsent.php" method="post" name="signupform">

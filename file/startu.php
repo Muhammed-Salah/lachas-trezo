@@ -64,37 +64,37 @@ $a=randomPassword();
 </nav>
 
 <div id="banner_image2">
-<div class="container">
-	<center>
-	<div id="banner_content5">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4 well">
-			
-					<fieldset>
-						<legend>Let's start</legend>
-			<form name="signupform" method="post">
-				<center><h4>Welcome to Lachas Trezò 
-				by  MEA IEEE SB.<br>
-				Your account password has been sent to your mobile number</h4></center>
-						<div class="form-group">
-							<label for="name">Your Account Password</label>
-							<input type="text" name="pass" placeholder="Password" value=<?php echo $a; ?> required readonly  class="form-control" />
-							<span class="text-danger"></span>
-						</div>
+	<div class="container">
+		<center>
+			<div id="banner_content3">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 well">
 					
-						
-						<div class="form-group">
-							<a href="startphp.php?phno=<?php echo $_POST['b2'];  ?>"><input onclick="checking();" type="button" name="signup" value="Start Now" class="btn btn-primary" /></a>
-						</div>
-						
-					</fieldset>
-			
-				<span class="text-success"></span>
-				<span class="text-danger"></span>
+							<fieldset>
+								<legend>Let's start</legend>
+						<form name="signupform" method="post">
+						<center><h4>Welcome to Lachas Trezò 
+						by  MEA IEEE SB.<br>
+						Your account password has been sent to your mobile number</h4></center>
+								<div class="form-group">
+									<label for="name">Your Account Password</label>
+									<input type="text" name="pass" placeholder="Password" value=<?php echo $a; ?> required readonly  class="form-control" />
+									<span class="text-danger"></span>
+								</div>
+							
+								
+								<div class="form-group">
+									<a href="startphp.php?phno=<?php echo $_POST['b2'];  ?>"><input onclick="checking();" type="button" name="signup" value="Start Now" class="btn btn-primary" /></a>
+								</div>
+								
+							</fieldset>
+					
+						<span class="text-success"></span>
+						<span class="text-danger"></span>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	</center>
+		</center>
 	</div>
 </div>
 <script src="js/jquery-1.10.2.js"></script>
