@@ -63,7 +63,7 @@ $a=randomPassword();
 	</div>
 </nav>
 
-<div id="banner_image2">
+<div id="banner_image3">
 	<div class="container">
 		<center>
 			<div id="banner_content3">

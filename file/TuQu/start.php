@@ -25,7 +25,7 @@ if(!isset($_SESSION['phno'])){
  <!--   <link rel="icon" href="http://meaieeesb.org/xtrinia/wp-content/uploads/2016/01/cropped-xtrinia-logo-mea-ieee-sb-1-2-180x180.png" type="image/x-icon" />
 <link rel="shortcut icon" href="http://meaieeesb.org/xtrinia/wp-content/uploads/2016/01/cropped-xtrinia-logo-mea-ieee-sb-1-2-180x180.png" type="image/x-icon" /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Lachas Trezò  2019</title>
+    <title>Lachas Trezò  2020</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
 
@@ -156,11 +156,11 @@ FinishMessage = "Timer Over";
                                                 <div class="text-center">
                                                     <input type='submit' value="submit & next" class='btn  btn-fill btn-primary btn-wd' name='next' > 
                                                    
-                                                </div>
-                                                 <div class="text-center">
+                                                </div><br><br>
+                                                 <!-- <div class="text-center">
                                                     <button type="button" class='btn btn-default clear_resp' disabled><i class="material-icons">replay</i> <span class="hidden-xs">Clear response</span></button>
                                                 </div>
-                                                <div class="clearfix"></div>
+                                                <div class="clearfix"></div> -->
                                             </div>
 
                                         </div>
